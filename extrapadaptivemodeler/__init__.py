@@ -8,7 +8,7 @@
 
 __title__ = "Extra-P Adaptive Modeler"
 __version__ = "1.0.0"
-__description__ = "Extra-P adaptive modeler."
+__description__ = "Extra-P Adaptive Modeler."
 __copyright__ = "Copyright (c) 2024 Technical University of Darmstadt, Darmstadt, Germany"
 __documentation_link__ = f"https://github.com/extra-p/extrap/tree/v{__version__}/docs"
 __current_version_api__ = "https://pypi.org/pypi/extrap/json"

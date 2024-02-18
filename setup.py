@@ -11,13 +11,13 @@ with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
 info = {}
-with open("extrap-adaptive-modeler/__init__.py") as fp:
+with open("extrapadaptivemodeler/__init__.py") as fp:
     exec(fp.read(), info)
 
 setup(
-    name="extrap adaptive modeler",
+    name="extrapadaptivemodeler",
     version=info['__version__'],
-    packages=find_packages(include=('extrap-adaptive-modeler', 'extrap-adaptive-modeler.*')),
+    packages=find_packages(include=('extrapadaptivemodeler', 'extrapadaptivemodeler.*')),
     author="Extra-P project",
     author_email="extra-p@lists.parallel.informatik.tu-darmstadt.de",
     description=info['__description__'],
