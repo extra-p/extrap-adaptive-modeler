@@ -11,13 +11,13 @@ with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
 info = {}
-with open("extrapadaptivemodeler/__init__.py") as fp:
+with open("extrap_adaptive_modeler/__init__.py") as fp:
     exec(fp.read(), info)
 
 setup(
-    name="extrapadaptivemodeler",
+    packages=find_packages(include=('extrap_adaptive_modeler')),
+    name="extrap-adaptive-modeler",
     version=info['__version__'],
-    packages=find_packages(include=('extrapadaptivemodeler', 'extrapadaptivemodeler.*')),
     author="Extra-P project",
     author_email="extra-p@lists.parallel.informatik.tu-darmstadt.de",
     description=info['__description__'],
@@ -44,8 +44,8 @@ setup(
     python_requires='>=3.8',
     include_package_data=True,
     install_requires=[
-        "extrap>=4.1.2",
-        "tensorflow>=2.9.1",
+        "extrap~=4.2",
+        "tensorflow~=2.9",
         "importlib-resources>=6.1.1"
     ],
 )

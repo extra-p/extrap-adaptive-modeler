@@ -1,1 +1,1 @@
-recursive-include extrapadaptivemodeler *.h5
+recursive-include extrap_adaptive_modeler *.h5
