@@ -15,7 +15,7 @@ with open("extrap_adaptive_modeler/__init__.py") as fp:
     exec(fp.read(), info)
 
 setup(
-    packages=find_packages(include=('extrap_adaptive_modeler')),
+    packages=find_packages(include=('extrap_adaptive_modeler', 'extrap_adaptive_modeler.*')),
     name="extrap-adaptive-modeler",
     version=info['__version__'],
     author="Extra-P project",
