@@ -7,7 +7,7 @@
 
 
 __title__ = "Extra-P Adaptive Modeler"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __description__ = ("Extra-P Adaptive Modeler: Optional package for Extra-P to enable adaptive performance modeling "
                    "using DNNs for model creation.")
 __copyright__ = "Copyright (c) 2024 Technical University of Darmstadt, Darmstadt, Germany"

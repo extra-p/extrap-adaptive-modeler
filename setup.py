@@ -45,7 +45,9 @@ setup(
     include_package_data=True,
     install_requires=[
         "extrap~=4.2",
-        "tensorflow~=2.9",
+        "tensorflow~=2.9;python_version<'3.9'",  # tensorflow earlier than 2.14 does not have a legacy keras package.
+        "tensorflow~=2.14;python_version>='3.9'",
+        "tf_keras~=2.14;python_version>='3.9'",
         "importlib-resources>=6.1.1"
     ],
 )

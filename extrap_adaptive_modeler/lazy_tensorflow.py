@@ -7,14 +7,11 @@
 
 import logging
 import os
-import warnings
-
-from extrap.util.caching import cached_property
 
 
 def load_tensorflow():
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = "1"
-
+    os.environ['TF_USE_LEGACY_KERAS'] = "1"
 
     import tensorflow as tf
     physical_devices = tf.config.experimental.list_physical_devices('GPU')
